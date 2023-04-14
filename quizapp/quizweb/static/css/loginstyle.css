@@ -1,0 +1,72 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  width: 400px;
+}
+
+form h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.txt_field {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+input[type="text"],
+input[type="password"] {
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-bottom: 2px solid #e74c3c;
+}
+
+.txt_field label {
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #e74c3c;
+}
+
+.pass {
+  font-size: 14px;
+  text-align: right;
+}
+
+.signup_link {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.signup_link a {
+  color: #e74c3c;
+}
